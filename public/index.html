@@ -10,6 +10,8 @@
       integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
       crossorigin="anonymous"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>ChatCord App</title>
   </head>
@@ -19,7 +21,7 @@
         <h1>😎 ChatRoom</h1>
       </header>
       <main class="join-main">
-        <form action="chat.html">
+        <form action="chat.html" data-aos="flip-right">
           <div class="form-control">
             <label for="username">Username</label>
             <input
@@ -45,5 +47,13 @@
         </form>
       </main>
     </div>
+    
+    <script>
+      AOS.init({
+       delay: 200,
+       duration: 1200,
+       once: false
+      })
+    </script>
   </body>
 </html>
